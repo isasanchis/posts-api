@@ -1,12 +1,32 @@
 <template>
-  <div id="home-view">
+  <div id="posts-view">
+
+    <header>
       <h1 class="name-page">H. BLOG</h1>
-  </div>
+    </header>
+
+    <main>
+      <div class="posts-show" v-for="post in posts" :key="post.id">
+        <h2> {{ posts }} </h2>
+      </div>
+    </main>
+      
+  </div> 
 </template>
 
 <script>
+import axios from 'axios'
 export default {
-
+  data() {
+    return {
+      posts: null,
+      postsShow: { title: '', body: ''}
+    }
+  },
+  mounted () {
+    axios.get('https://jsonplaceholder.typicode.com/posts')
+      .then(response => (this.posts = response));
+  }
 }
 </script>
 
@@ -16,18 +36,12 @@ body {
   font-family: Verdana, Tahoma, sans-serif;
 }
 
-#home-view {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .name-page {
   color: #fff;
-  font-size: 8em;
+  font-size: 5em;
+  text-align: center;
   text-shadow: 1px 1px 2px #000;
+  margin: 0;
 }
-
 
 </style>
