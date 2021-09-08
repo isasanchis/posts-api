@@ -3,15 +3,14 @@
 
     <header id="header-page">
       <h1 class="name-page">H. BLOG</h1>
-      <div class="line-1"></div>
     </header>
 
   <div id="posts-container">
-    <main v-for="post in posts" :key="post.id" id="posts-show">
-      <span class="post-card">
+    <span v-for="post in posts" :key="post.id" id="posts-show">
+      <button class="post-card">
         {{ post.title }}
-      </span>
-    </main>
+      </button>
+    </span>
   </div>
     
   </div> 
@@ -42,6 +41,13 @@ body {
   margin: 0;
 }
 
+#header-page {
+  background-color:rgb(245, 94, 114);
+  box-shadow: 3px 4px 8px 1px rgba(0, 0, 0, 0.2);
+  height: 110px;
+  margin-bottom: 50px;
+}
+
 .name-page {
   color: #fff;
   font-size: 5em;
@@ -50,34 +56,25 @@ body {
   margin: 0;
 }
 
-.line-1 {
-  border-top: 1px solid black;
-  margin-top: 30px;
-  margin-bottom: 50px;
-}
-
 /* POSTS */
 #posts-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-}
-
-#posts-show{
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
 }
 
 .post-card {
+  font-family: Verdana;
+  font-size: 1em;
   background-color: #fff;
-  text-align: center;
-  padding: 16px;
   width: 250px;
   height: 100px;
-  margin: 20px;
+  margin: 10px;
+  margin-bottom: 30px;
   border-radius: 5px;
+  border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
   overflow: hidden;
 }
 </style>
