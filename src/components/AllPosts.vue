@@ -1,31 +1,30 @@
 <template>
   <div id="posts-view">
 
-    <header>
+    <header id="header-page">
       <h1 class="name-page">H. BLOG</h1>
     </header>
 
-    <main>
-      <div class="posts-show" v-for="post in posts" :key="post.id">
-        <h2> {{ posts }} </h2>
-      </div>
-    </main>
+    <div v-for="post in posts" :key="post.id" id="posts-show">
+        {{ post.title }}
+    </div>
       
   </div> 
 </template>
 
 <script>
 import axios from 'axios'
+
 export default {
   data() {
     return {
-      posts: null,
-      postsShow: { title: '', body: ''}
+      posts: null
     }
   },
   mounted () {
     axios.get('https://jsonplaceholder.typicode.com/posts')
-      .then(response => (this.posts = response));
+      .then(response => (this.posts = response.data))
+      .catch(error => console.log(error));
   }
 }
 </script>
