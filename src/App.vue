@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Homepage from './components/Homepage.vue'
+import Homepage from './components/AllPosts.vue'
 
 export default {
     components: { Homepage }
