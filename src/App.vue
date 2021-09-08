@@ -1,17 +1,14 @@
 <template>
   <div id="app">
-      <Homepage />
+      <AllPosts />
   </div>
 </template>
 
 <script>
-import Homepage from './components/AllPosts.vue'
+import AllPosts from './components/AllPosts';
 
 export default {
-    components: { Homepage }
-}
+  name: 'App',
+  components: { AllPosts }
+};
 </script>
-
-<style>
-
-</style>
