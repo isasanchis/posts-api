@@ -1,8 +1,8 @@
 <template>
   <div>
-    <header id="header-page">
-      <h1 class="name-page">H. BLOG</h1>
-    </header>
+      <header id="header-page">
+        <h1 class="name-page">H. BLOG</h1>
+      </header>
   </div>
 </template>
 
@@ -21,10 +21,6 @@ export default {
   box-shadow: 3px 4px 8px 1px rgba(0, 0, 0, 0.2);
   height: 110px;
   margin-bottom: 50px;
-}
-
-.router-link-active {
-  text-decoration: none;
 }
 
 .name-page {
