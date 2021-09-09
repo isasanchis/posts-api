@@ -29,14 +29,15 @@ export default {
 }
 
 #posts-container {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   margin: 30px;
 }
 
 .post-card {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  text-align: center;
   background-color: #fff;
   width: 250px;
   height: 100px;
