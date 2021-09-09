@@ -13,10 +13,10 @@ Tecnologias utilizadas:
 * <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D">
 
 <h3>Como inicio essa aplicação?</h3>
-
+<br>
 <p>Caso você possua Node.js instalado em sua máquina:
 <br>
-  • Dê um git clone nessa aplicação;
+  • Clone a aplicação;
   <br>
   • Abra o terminal;
   <br>
