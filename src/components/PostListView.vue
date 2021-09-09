@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "ListView",
+  name: 'ListView',
   props: {
     posts: {
       type: Array,
@@ -34,11 +34,11 @@ export default {
 
 .post-card {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 5px;
+  align-items: center;
   text-align: center;
   background-color: #fff;
+  padding: 5px;
   width: 250px;
   height: 100px;
   margin: 0;

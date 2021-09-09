@@ -3,12 +3,14 @@
         <h1 class="title-detail">{{ postObj.title }}</h1>
         <p class="text-detail">{{ postObj.body }}</p>
         <button id="returnBtn" @click="$emit('click')">Voltar</button>
+
+        
     </div>
 </template>
 
 <script>
 export default {
-    name: 'SinglePostView',
+    name: 'PostDetailView',
     props: {
         postObj: {
             type: Object,

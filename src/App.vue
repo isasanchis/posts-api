@@ -2,8 +2,8 @@
   <div id="app">
 
     <Header />
-    <PostListView v-if="view === 'list'" :posts="posts" @click="changeView" />
-    <PostDetailView v-if="view === 'post'" @click="returnView()" :postObj="postObj" />
+    <PostListView v-if="view === 'list'" @click="changeView" :posts="posts" />
+    <PostDetailView v-if="view === 'detail'" @click="returnView" :postObj="postObj" />
     <Footer />
 
   </div>
@@ -23,7 +23,6 @@ export default {
     return {
       posts: null,
       url: 'https://jsonplaceholder.typicode.com/posts',
-      postVisible: 0,
       view: 'list',
       postObj: {},
     }
@@ -34,19 +33,22 @@ export default {
       .catch(error => console.log(error));
   },
   methods: {
-    toggleVisible(post) {
-      if(this.postVisible === post.id) {
-        return this.postVisible = 0
-      }
-      this.postVisible = post.id
-    },
     changeView(post) {
       this.postObj = post;
-      this.view = 'post';
+      this.view = 'detail';
+
+      this.readMore();
     },
     returnView() {
       this.postObj = {};
       this.view = 'list';
+    },
+    readMore() {
+      let firstPost = this.posts[0];
+      let secondPost = this.posts[1];
+      let thirdPost = this.posts[2];
+      let quartPost = this.posts[3];
+      console.log(firstPost, secondPost, thirdPost, quartPost);
     }
   }
 };
