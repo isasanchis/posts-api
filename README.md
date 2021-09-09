@@ -26,6 +26,10 @@ Tecnologias utilizadas:
   <br>
 <p>Se não possuir o Node.js instalado, siga as instruções a seguir:</p>
 <br>
+  • Clone a aplicação;
+  <br>  
+  • Abra a pasta main.js.
+  <br>
 <h3>O que poderia melhorar nessa aplicação?</h3>
 
 <p>• Adicionar paginação ou um lazy loading, de forma que todos os posts não sejam exibidos de uma vez só.</p>
