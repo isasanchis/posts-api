@@ -3,7 +3,7 @@
 
     <Header />
     <PostListView v-if="view === 'list'" @click="changeView" :posts="posts" />
-    <PostDetailView v-if="view === 'detail'" @click="returnView" :postObj="postObj" />
+    <PostDetailView v-if="view === 'detail'" @click="returnView" :postObj="postObj" :hintPosts="hintPosts" />
     <Footer />
 
   </div>
@@ -25,6 +25,7 @@ export default {
       url: 'https://jsonplaceholder.typicode.com/posts',
       view: 'list',
       postObj: {},
+      hintPosts: [],
     }
   },
   mounted() {
@@ -36,7 +37,6 @@ export default {
     changeView(post) {
       this.postObj = post;
       this.view = 'detail';
-
       this.readMore();
     },
     returnView() {
@@ -44,13 +44,13 @@ export default {
       this.view = 'list';
     },
     readMore() {
-      let hintPosts = this.posts.slice(0, 4);
-      if(hintPosts.includes(this.postObj)){
-        const index = hintPosts.indexOf(this.postObj);
-        hintPosts.splice(index, 1);
-        hintPosts.push(this.posts[4]);
+      this.hintPosts = this.posts.slice(0, 4);
+      if(this.hintPosts.includes(this.postObj)){
+        const index = this.hintPosts.indexOf(this.postObj);
+        this.hintPosts.splice(index, 1);
+        this.hintPosts.push(this.posts[4]);
       }
-      console.log(hintPosts);
+      console.log(this.hintPosts)
     }
   }
 };

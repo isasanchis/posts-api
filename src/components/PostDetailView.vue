@@ -3,6 +3,17 @@
         <h1 class="title-detail">{{ postObj.title }}</h1>
         <p class="text-detail">{{ postObj.body }}</p>
         <button id="returnBtn" @click="$emit('click')">Voltar</button>
+
+        <section id="posts-show">
+            <span id="posts-container">
+                <h3>Leia mais:</h3>
+                <span class="post-card">{{ hintPosts[0].title }}</span>
+                <span class="post-card">{{ hintPosts[1].title }}</span>
+                <span class="post-card">{{ hintPosts[2].title }}</span>
+                <span class="post-card">{{ hintPosts[3].title }}</span>
+            </span>
+        </section>
+
     </div>
 </template>
 
@@ -14,6 +25,11 @@ export default {
             type: Object,
             required: true,
             default: () => {}
+        },
+        hintPosts: {
+            type: Array,
+            required: true,
+            default: () => []
         }
     }
 }
@@ -29,8 +45,17 @@ export default {
     justify-content: center;
     align-items: center;
     margin: 30px ;
-    padding: 50px;
+    padding: 40px;
     border-radius: 5px;
+}
+
+#detail-container span {
+    margin: 20px;
+}
+
+#detail-container h3 {
+    text-align: center;
+    font-weight: 100;
 }
 
 .title-detail {
@@ -45,7 +70,7 @@ export default {
     border-radius: 30px;
     width: 90px;
     cursor: pointer;
-    margin: 20px 0 0 0;
+    margin: 20px 0 20px 0;
 }
 
 #returnBtn:hover{

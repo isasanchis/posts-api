@@ -1,8 +1,8 @@
 <template>
   <div id="posts-show">
-    <div v-for="post in posts" :key="post.id" id="posts-container">
+    <main v-for="post in posts" :key="post.id" id="posts-container">
       <span @click="$emit('click', post)" class="post-card">{{ post.title }}</span>
-   </div>
+   </main>
   </div>
 </template>
 
