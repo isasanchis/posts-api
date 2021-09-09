@@ -25,6 +25,9 @@ Tecnologias utilizadas:
   • Abra o endereço (normalmente localizado em: http://localhost:8080/).
   <br>
 <p>Se não possuir o Node.js instalado, siga as instruções a seguir:</p>
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<br>
+<h3>O que poderia melhorar nessa aplicação?</h3>
+<br>
+<p>Adicionar paginação ou um lazy loading, de forma que todos os posts não sejam exibidos de uma vez só.</p>
+<br>
+<p>Ao invés de retornar sempre os primeiros 4 posts na seção "leia mais", retornar posts aleatórios. Uma forma melhor ainda seria armazenar os posts lidos no local storage, e retornar os posts que ainda não foram lidos.</p>
