@@ -13,7 +13,6 @@ Tecnologias utilizadas:
 <h3>Como inicio essa aplicação?</h3>
 
 <p>Caso você possua Node.js instalado em sua máquina:</p>
-<br>
   • Clone a aplicação;
   <br>
   • Abra o terminal;
