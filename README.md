@@ -11,7 +11,7 @@ Tecnologias utilizadas:
 * <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D">
 
 <h3>Como inicio essa aplicação?</h3>
-<br>
+
 <p>Caso você possua Node.js instalado em sua máquina:
 <br>
   • Clone a aplicação;
@@ -27,6 +27,6 @@ Tecnologias utilizadas:
 <p>Se não possuir o Node.js instalado, siga as instruções a seguir:</p>
 <br>
 <h3>O que poderia melhorar nessa aplicação?</h3>
-<br>
-<p>Adicionar paginação ou um lazy loading, de forma que todos os posts não sejam exibidos de uma vez só.</p>
-<p>Ao invés de retornar sempre os primeiros 4 posts na seção "leia mais", retornar posts aleatórios. Uma forma melhor ainda seria armazenar os posts lidos no local storage, e retornar os posts que ainda não foram lidos.</p>
+
+<p>• Adicionar paginação ou um lazy loading, de forma que todos os posts não sejam exibidos de uma vez só.</p>
+<p>• Ao invés de retornar sempre os primeiros 4 posts na seção "leia mais", retornar posts aleatórios. Uma forma melhor ainda seria armazenar os posts lidos no local storage, e retornar os posts que ainda não foram lidos.</p>
