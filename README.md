@@ -12,8 +12,7 @@ Tecnologias utilizadas:
 
 <h3>Como inicio essa aplicação?</h3>
 
-<p>Caso você possua Node.js instalado em sua máquina:
-<br>
+<p>Caso você possua Node.js instalado em sua máquina:</p>
   • Clone a aplicação;
   <br>
   • Abra o terminal;
@@ -24,8 +23,13 @@ Tecnologias utilizadas:
   <br>
   • Abra o endereço (normalmente localizado em: http://localhost:8080/).
   <br>
+  <br>
 <p>Se não possuir o Node.js instalado, siga as instruções a seguir:</p>
-<br>
+  • Clone a aplicação;
+  <br>  
+  • Abra o arquivo main.js.
+  <br>
+  
 <h3>O que poderia melhorar nessa aplicação?</h3>
 
 <p>• Adicionar paginação ou um lazy loading, de forma que todos os posts não sejam exibidos de uma vez só.</p>
