@@ -45,6 +45,7 @@ export default {
     border-radius: 30px;
     width: 90px;
     cursor: pointer;
+    margin: 20px 0 0 0;
 }
 
 #returnBtn:hover{

@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div id="posts-show">
     <div v-for="post in posts" :key="post.id" id="posts-container">
-      <h1 @click="$emit('click', post)" class="post-card">{{ post.title }}</h1>
+      <span @click="$emit('click', post)" class="post-card">{{ post.title }}</span>
    </div>
   </div>
 </template>
@@ -21,10 +21,18 @@ export default {
 
 <style>
 
-#posts-container {
+#posts-show {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#posts-container {
+  display: inline-flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  margin: 30px;
 }
 
 .post-card {
@@ -32,8 +40,7 @@ export default {
   background-color: #fff;
   width: 250px;
   height: 100px;
-  margin: 10px;
-  margin-bottom: 30px;
+  margin: 0;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
