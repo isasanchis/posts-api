@@ -20,7 +20,7 @@ Tecnologias utilizadas:
   <br>
   • Vá até a página onde salvou o arquivo clonado;
   <br>
-  • Dentro da pasta, digite "npm run serve";
+  • Dentro da pasta, digite "npm install", em seguida, "npm run serve";
   <br>
   • Abra o endereço (normalmente http://localhost:8080/).
   <br>
