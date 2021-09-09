@@ -1,10 +1,12 @@
 <template>
     <div id="reading-container">
 
-        <div id="detail-container">
-            <h1 class="title-detail">{{ postObj.title }}</h1>
-            <p class="text-detail">{{ postObj.body }}</p>
-            <button id="returnBtn" @click="$emit('click')">Voltar</button>
+        <div id="details-show">
+            <div id="detail-container">
+                <h1 class="title-detail">{{ postObj.title }}</h1>
+                <p class="text-detail">{{ postObj.body }}</p>
+                <button id="returnBtn" @click="$emit('click')">Voltar</button>
+            </div>
         </div>
 
         <section id="posts-show">
@@ -59,7 +61,7 @@ export default {
     align-items: center;
     margin: 30px;
     margin-bottom: 0;
-    padding: 40px;
+    padding: 38px;
     border-radius: 5px;
 }
 
@@ -80,6 +82,18 @@ export default {
 
 #returnBtn:hover{
     background: rgb(226, 113, 128);
+}
+
+#details-show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 280px) {
+    #detail-container {
+        padding: 20px;
+    }
 }
 
 @media screen and (min-width: 65.5em) {
