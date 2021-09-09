@@ -2,8 +2,6 @@
 
 <p>Nesse projeto, foi realizado um front-end com Vue.js integrando com uma API de posts.
 <br>
-<br>
-Feito através de componentização para separação de responsabilidades e melhor organização da aplicação, e utilização de Vue CLI, para melhor performance e possibilidade de uso de plugins.
 </p>
 
 Tecnologias utilizadas:
