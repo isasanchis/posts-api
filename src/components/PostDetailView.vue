@@ -40,6 +40,16 @@ export default {
 
 <style>
 
+#reading-container span {
+    margin: 20px;
+}
+
+#reading-container h3 {
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+}
+
 #detail-container {
     background-color: #fff;
     display: flex;
@@ -51,16 +61,6 @@ export default {
     margin-bottom: 0;
     padding: 40px;
     border-radius: 5px;
-}
-
-#reading-container span {
-    margin: 20px;
-}
-
-#reading-container h3 {
-    color: #fff;
-    text-align: center;
-    font-weight: 100;
 }
 
 .title-detail {
@@ -82,9 +82,11 @@ export default {
     background: rgb(226, 113, 128);
 }
 
-#post-card {
-    display: inline-block;
-    width: 200px;
+@media screen and (min-width: 65.5em) {
+    #post-card {
+        display: inline-block;
+        width: 200px;
+    }
 }
 
 </style>
