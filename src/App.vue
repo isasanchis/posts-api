@@ -58,7 +58,16 @@ export default {
 body {
   background-color:rgb(231, 52, 76);
   font-family: Verdana, Tahoma, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
   margin: 0;
+}
+
+#app {
+  height: 100%;
 }
 
 </style>
