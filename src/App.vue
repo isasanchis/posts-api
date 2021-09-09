@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Header />
-    <PostListView v-if="isListView" @click="changeView" :posts="posts" />
-    <PostDetailView v-else @click="returnView" :postObj="postObj" :hintPosts="hintPosts" />
+    <Header @filter="searchPost" />
+    <PostListView v-if="isListView" @click="changeView" :posts="postsReturn" />
+    <PostDetailView v-else @click="returnView" :postInfo="postInfo" :hintPosts="hintPosts" />
     <Footer />
   </div>
 </template>
@@ -22,8 +22,9 @@ export default {
       posts: null,
       url: 'https://jsonplaceholder.typicode.com/posts',
       view: 'list',
-      postObj: {},
+      postInfo: {},
       hintPosts: [],
+      filter: '',
     }
   },
   created() {
@@ -33,26 +34,35 @@ export default {
   },
   methods: {
     changeView(post) {
-      this.postObj = post;
+      this.postInfo = post;
       this.view = 'detail';
       this.readMore();
     },
     returnView() {
-      this.postObj = {};
+      this.postInfo = {};
       this.view = 'list';
     },
     readMore() {
       this.hintPosts = this.posts.slice(0, 4);
-      if(this.hintPosts.includes(this.postObj)){
-        const index = this.hintPosts.indexOf(this.postObj);
+      if(this.hintPosts.includes(this.postInfo)){
+        const index = this.hintPosts.indexOf(this.postInfo);
         this.hintPosts.splice(index, 1);
         this.hintPosts.push(this.posts[4]);
       }
+    },
+    searchPost(postTitle) {
+      this.filter = postTitle;
     }
   },
   computed: {
     isListView() {
       return this.view === 'list';
+    },
+    postsReturn() {
+      if(this.filter) {
+        return this.posts.filter((item) => item.title.includes(this.filter))
+      }
+      return this.posts;
     }
   }
 };
@@ -60,9 +70,8 @@ export default {
 </script>
 
 <style>
-
 body {
-  background-color:rgb(231, 52, 76);
+  background-color:rgb(216, 208, 208);
   font-family: Verdana, Tahoma, sans-serif;
 }
 
@@ -75,5 +84,4 @@ body {
 #app {
   height: 100%;
 }
-
 </style>

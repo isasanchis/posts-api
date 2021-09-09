@@ -5,10 +5,9 @@
 </template>
 
 <style>
-
 #footer {
   border-top: 1px solid #000;
-  background-color:rgb(245, 94, 114);
+  background-color:rgb(231, 52, 76);
   height: 50px;
 }
 
@@ -16,5 +15,4 @@
   color: #fff;
   text-align: center;
 }
-
 </style>
