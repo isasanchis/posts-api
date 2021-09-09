@@ -44,11 +44,13 @@ export default {
       this.view = 'list';
     },
     readMore() {
-      let firstPost = this.posts[0];
-      let secondPost = this.posts[1];
-      let thirdPost = this.posts[2];
-      let quartPost = this.posts[3];
-      console.log(firstPost, secondPost, thirdPost, quartPost);
+      let hintPosts = this.posts.slice(0, 4);
+      if(hintPosts.includes(this.postObj)){
+        const index = hintPosts.indexOf(this.postObj);
+        hintPosts.splice(index, 1);
+        hintPosts.push(this.posts[4]);
+      }
+      console.log(hintPosts);
     }
   }
 };

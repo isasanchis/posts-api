@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'ListView',
+  name: 'PostListView',
   props: {
     posts: {
       type: Array,
