@@ -1,30 +1,35 @@
 <template>
     <div id="reading-container">
-
         <div id="details-show">
             <div id="detail-container">
-                <h1 class="title-detail">{{ postObj.title }}</h1>
-                <p class="text-detail">{{ postObj.body }}</p>
+                <h1 class="title-detail">{{ post.title }}</h1>
+                <p class="text-detail">{{ post.body }}</p>
                 <button id="returnBtn" @click="$emit('click')">Voltar</button>
             </div>
         </div>
-
-        <section id="posts-show">
-            <span id="posts-container">
-                <h3>Leia mais:</h3>
-                <span id="post-card" class="post-card">{{ hintPosts[0].title }}</span>
-                <span id="post-card" class="post-card">{{ hintPosts[1].title }}</span>
-                <span id="post-card" class="post-card">{{ hintPosts[2].title }}</span>
-                <span id="post-card" class="post-card">{{ hintPosts[3].title }}</span>
-            </span>
-        </section>
-
+        <p style="color:#fff; text-align:center;">Leia mais:</p>
+        <PostListView :posts="hintPosts" @click="changePost" />
     </div>
 </template>
 
 <script>
+import PostListView from './PostListView.vue' 
+
 export default {
     name: 'PostDetailView',
+    components: { PostListView },
+    data() {
+        return {
+            post: { 
+                id: null, 
+                title: null, 
+                body: null 
+            },
+        }
+    },
+    created() {
+        this.post = this.postObj;
+    },
     props: {
         postObj: {
             type: Object,
@@ -36,21 +41,19 @@ export default {
             required: true,
             default: () => []
         }
+    },
+    methods: { 
+        changePost(post) {
+            const index = this.hintPosts.indexOf(post);
+            this.hintPosts.splice(index, 1);
+            this.hintPosts.push(this.post);
+            this.post = post;
+        }
     }
 }
 </script>
 
-<style>
-
-#reading-container span {
-    margin: 20px;
-}
-
-#reading-container h3 {
-    color: #fff;
-    text-align: center;
-    font-weight: 100;
-}
+<style scoped>
 
 #detail-container {
     background-color: #fff;
@@ -93,13 +96,6 @@ export default {
 @media screen and (max-width: 280px) {
     #detail-container {
         padding: 20px;
-    }
-}
-
-@media screen and (min-width: 65.5em) {
-    #post-card {
-        display: inline-block;
-        width: 200px;
     }
 }
 

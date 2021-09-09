@@ -1,11 +1,9 @@
 <template>
   <div id="app">
-
     <Header />
-    <PostListView v-if="view === 'list'" @click="changeView" :posts="posts" />
-    <PostDetailView v-if="view === 'detail'" @click="returnView" :postObj="postObj" :hintPosts="hintPosts" />
+    <PostListView v-if="isListView" @click="changeView" :posts="posts" />
+    <PostDetailView v-else @click="returnView" :postObj="postObj" :hintPosts="hintPosts" />
     <Footer />
-
   </div>
 </template>
 
@@ -28,7 +26,7 @@ export default {
       hintPosts: [],
     }
   },
-  mounted() {
+  created() {
     axios.get(this.url)
       .then(response => (this.posts = response.data))
       .catch(error => console.log(error));
@@ -50,6 +48,11 @@ export default {
         this.hintPosts.splice(index, 1);
         this.hintPosts.push(this.posts[4]);
       }
+    }
+  },
+  computed: {
+    isListView() {
+      return this.view === 'list';
     }
   }
 };

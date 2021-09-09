@@ -22,12 +22,6 @@
   margin: 0;
 }
 
-@media screen and (min-width: 48.75em) {
-  .header-name {
-    font-size: 1em;
-  }
-}
-
 @media screen and (min-width: 62.5em) {
   #header-container {
     height: 110px;
