@@ -17,10 +17,16 @@ Tecnologias utilizadas:
 <p>Caso você possua Node.js instalado em sua máquina:
 <br>
   • Dê um git clone nessa aplicação;
+  <br>
   • Abra o terminal;
+  <br>
   • Vá até a página onde salvou o arquivo clonado;
+  <br>
   • Dentro da pasta, digite "npm run serve";
+  <br>
   • Abra o endereço (normalmente http://localhost:8080/).
+  <br>
+<p>Se não possuir o Node.js instalado, siga as instruções a seguir:</p>
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
