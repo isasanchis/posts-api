@@ -22,7 +22,7 @@ Tecnologias utilizadas:
   <br>
   • Dentro da pasta, digite "npm install", em seguida, "npm run serve";
   <br>
-  • Abra o endereço (normalmente http://localhost:8080/).
+  • Abra o endereço (normalmente localizado em: http://localhost:8080/).
   <br>
 <p>Se não possuir o Node.js instalado, siga as instruções a seguir:</p>
 
