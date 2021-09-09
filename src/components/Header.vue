@@ -1,10 +1,8 @@
 <template>
   <div>
-    <router-link to='/'>
-      <header id="header-page">
-        <h1 class="name-page">H. BLOG</h1>
-      </header>
-    </router-link>
+    <header id="header-page">
+      <h1 class="name-page">H. BLOG</h1>
+    </header>
   </div>
 </template>
 
