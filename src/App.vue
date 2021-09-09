@@ -50,7 +50,6 @@ export default {
         this.hintPosts.splice(index, 1);
         this.hintPosts.push(this.posts[4]);
       }
-      console.log(this.hintPosts)
     }
   }
 };
