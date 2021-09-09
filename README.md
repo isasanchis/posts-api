@@ -27,7 +27,7 @@ Tecnologias utilizadas:
 <p>Se não possuir o Node.js instalado, siga as instruções a seguir:</p>
   • Clone a aplicação;
   <br>  
-  • Abra a pasta main.js.
+  • Abra o arquivo main.js.
   <br>
   
 <h3>O que poderia melhorar nessa aplicação?</h3>
