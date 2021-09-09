@@ -6,18 +6,15 @@
 
 <style>
 
-/* FOOTER */
-
 #footer {
   border-top: 1px solid #000;
   background-color:rgb(245, 94, 114);
   height: 50px;
-  margin-top: 40px;
 }
 
 .copyright {
-    color: #fff;
-    text-align: center;
+  color: #fff;
+  text-align: center;
 }
 
 </style>

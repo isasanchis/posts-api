@@ -1,29 +1,20 @@
 <template>
   <div>
-      <header id="header-page">
-        <h1 class="name-page">H. BLOG</h1>
-      </header>
+    <header id="header-container">
+      <h1 class="header-name">H. BLOG</h1>
+    </header>
   </div>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
 <style>
 
-/* HEADER */
-
-#header-page {
+#header-container {
   background-color:rgb(245, 94, 114);
   box-shadow: 3px 4px 8px 1px rgba(0, 0, 0, 0.2);
   height: 110px;
-  margin-bottom: 50px;
 }
 
-.name-page {
+.header-name {
   color: #fff;
   font-size: 5em;
   text-align: center;
