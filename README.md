@@ -1,10 +1,10 @@
 # Posts API
 
-<h4>Nesse projeto, foi realizado um front-end com Vue.js integrando com uma API de posts.
+<p>Nesse projeto, foi realizado um front-end com Vue.js integrando com uma API de posts.
 <br>
 <br>
 Feito através de componentização, para separação de responsabilidades, e melhor organização da aplicação, e utilizado Vue CLI, para melhor performance e a possibilidade de utilização de plugins.
-</h4>
+</p>
 
 Tecnologias utilizadas:
 * <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
@@ -12,25 +12,15 @@ Tecnologias utilizadas:
 * <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
 * <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D">
 
-## Project setup
-```
-npm install
-```
+<h3>Como inicio essa aplicação?</h3>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+<p>Caso você possua Node.js instalado em sua máquina:
+<br>
+  • Dê um git clone nessa aplicação;
+  • Abra o terminal;
+  • Vá até a página onde salvou o arquivo clonado;
+  • Dentro da pasta, digite "npm run serve";
+  • Abra o endereço (normalmente http://localhost:8080/).
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
