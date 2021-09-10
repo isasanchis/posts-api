@@ -17,17 +17,15 @@ Tecnologias utilizadas:
   <br>
   • Abra o terminal;
   <br>
-  • Vá até a página onde salvou o arquivo clonado;
+  • Digite "npm install", em seguida, "npm run serve";
   <br>
-  • Dentro da pasta, digite "npm install", em seguida, "npm run serve";
-  <br>
-  • Abra o endereço (normalmente localizado em: http://localhost:8080/).
+  • Abra a URL http://localhost:8080/.
   <br>
   <br>
 <p>Se não possuir o Node.js instalado, siga as instruções a seguir:</p>
   • Clone a aplicação;
   <br>  
-  • Abra o arquivo main.js.
+  • Na pasta, abra o arquivo index.html.
   <br>
   
 <h3>O que poderia melhorar nessa aplicação?</h3>
