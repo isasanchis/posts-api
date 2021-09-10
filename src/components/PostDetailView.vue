@@ -1,13 +1,13 @@
 <template>
 	<div id="reading-container">
-		<div id="details-show">
-			<div id="detail-container">
+		<div class="details-show">
+			<div class="detail-container">
 				<h1 class="title-detail">{{ post.title }}</h1>
 				<p class="text-detail">{{ post.body }}</p>
-				<button id="returnBtn" @click="$emit('click')">Voltar</button>
+				<button class="return-btn" @click="$emit('click')">Voltar</button>
 			</div>
 		</div>
-		<p style="color:#fff; text-align:center;">Leia mais:</p>
+		<p class="readMore">Leia mais:</p>
 		<PostListView :posts="hintPosts" @click="changePost" />
 	</div>
 </template>
@@ -28,10 +28,10 @@ export default {
 		}
 	},
 	created() {
-		this.post = this.postObj;
+		this.post = this.postInfo;
 	},
 	props: {
-		postObj: {
+		postInfo: {
 			type: Object,
 			required: true,
 			default: () => {}
@@ -55,7 +55,7 @@ export default {
 
 <style scoped>
 
-#detail-container {
+.detail-container {
 	background-color: #fff;
 	display: flex;
 	flex-direction: column;
@@ -72,9 +72,9 @@ export default {
 	text-align: center;
 }
 
-#returnBtn {
+.return-btn {
 	padding: 10px;
-	background: rgb(231, 52, 76);
+	background: #e7344c;
 	color: #fff;
 	border: none;
 	border-radius: 30px;
@@ -83,14 +83,20 @@ export default {
 	margin: 20px 0 20px 0;
 }
 
-#returnBtn:hover{
-	background: rgb(245, 94, 114);
+.return-btn:hover{
+	background: #f55e72;
 }
 
-#details-show {
+.details-show {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.readMore {
+	text-align: center;
+	font-size: 1.4em;
+	margin-bottom: 0;
 }
 
 @media screen and (max-width: 280px) {

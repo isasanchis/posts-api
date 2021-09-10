@@ -71,7 +71,7 @@ export default {
 
 <style>
 body {
-  background-color:rgb(216, 208, 208);
+  background-color:#f7f7f7;
   font-family: Verdana, Tahoma, sans-serif;
 }
 

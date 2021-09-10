@@ -4,11 +4,11 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 #footer {
   border-top: 1px solid #000;
-  background-color:rgb(231, 52, 76);
-  height: 50px;
+  background-color:#e7344c;
+  height: 50px; 
 }
 
 .copyright {

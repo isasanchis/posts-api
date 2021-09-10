@@ -19,8 +19,7 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
 #posts-show {
   display: flex;
   flex-wrap: wrap;
@@ -47,5 +46,4 @@ export default {
   cursor: pointer;
   overflow: hidden;
 }
-
 </style>

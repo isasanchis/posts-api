@@ -1,8 +1,10 @@
 <template>
   <div>
-    <header id="header-container">
+    <header class="header-container">
       <h1 class="header-name">H. BLOG</h1>
-      <input class="header-input" type="search" name="search" id="search" v-model="searchText" @change="changeInput">
+      <input class="header-input" type="search" name="search" id="search" placeholder="Pesquisar..." 
+        v-model="searchText"
+        @change="changeInput" />
     </header>
   </div>
 </template>
@@ -23,28 +25,24 @@ export default {
 }
 </script>
 
-
-<style>
-#header-container {
-  background-color:rgb(231, 52, 76);
-  box-shadow: 3px 4px 8px 1px rgba(0, 0, 0, 0.2);
+<style scoped>
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #e7344c;
   height: 80px;
+  box-shadow: 3px 4px 8px 1px rgba(0, 0, 0, 0.2);
 }
 
 .header-name {
   color: #fff;
-  font-size: 3em;
-  text-align: center;
+  margin: auto 70px;
   text-shadow: 1px 1px 2px #000;
-  margin: 0;
 }
 
-@media screen and (min-width: 62.5em) {
-  #header-container {
-    height: 110px;
-  } 
-  .header-name {
-    font-size: 5em;
-  }
+.header-input {
+  height: 32px;
+  width: 50%;
+  margin: auto 30px;
 }
 </style>
