@@ -2,7 +2,7 @@
   <div>
     <header class="header-container">
       <h1 class="header-name">H. BLOG</h1>
-      <input class="header-input" type="search" name="search" id="search" placeholder="Pesquisar..." 
+      <input class="header-input" type="search" name="search" id="search" placeholder="Digite e pressione ENTER" 
         v-model="searchText"
         @change="changeInput" />
     </header>
