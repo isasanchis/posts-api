@@ -3,7 +3,6 @@
     <Header @filter="searchPost" />
     <PostListView v-if="isListView" @click="changeView" :posts="postsReturn" />
     <PostDetailView v-else @click="returnView" :postInfo="postInfo" :hintPosts="hintPosts" />
-    <Footer />
   </div>
 </template>
 
@@ -12,11 +11,10 @@ import axios from 'axios'
 import Header from './components/Header';
 import PostListView from './components/PostListView.vue'
 import PostDetailView from './components/PostDetailView.vue'
-import Footer from './components/Footer';
 
 export default {
   name: 'App',
-  components: { Header, PostListView, PostDetailView, Footer },
+  components: { Header, PostListView, PostDetailView },
   data() {
     return {
       posts: null,
@@ -77,7 +75,6 @@ body {
 
 html,
 body {
-  height: 100%;
   margin: 0;
 }
 
