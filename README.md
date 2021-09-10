@@ -12,7 +12,9 @@ Tecnologias utilizadas:
 
 <h3>Como inicio essa aplicação?</h3>
 
-<p>Caso você possua Node.js instalado em sua máquina:</p>
+<p>Link no Github Pages: https://isasanchis.github.io/posts-api/ </p>
+<br>
+<p>Caso deseje rodar local, siga as instruções abaixo:</p>
   • Clone a aplicação;
   <br>
   • Abra o terminal;
@@ -21,11 +23,6 @@ Tecnologias utilizadas:
   <br>
   • Abra a URL http://localhost:8080/.
   <br>
-  <br>
-<p>Se não possuir o Node.js instalado, siga as instruções a seguir:</p>
-  • Clone a aplicação;
-  <br>  
-  • Na pasta, abra o arquivo index.html.
   <br>
   
 <h3>O que poderia melhorar nessa aplicação?</h3>
